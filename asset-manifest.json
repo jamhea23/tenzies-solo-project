@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/tenzies-solo-project/static/css/main.44a934ab.css",
-    "main.js": "/tenzies-solo-project/static/js/main.89c4a23c.js",
+    "main.css": "/tenzies-solo-project/static/css/main.6c5bdfc2.css",
+    "main.js": "/tenzies-solo-project/static/js/main.f185bf83.js",
     "static/js/787.15411d67.chunk.js": "/tenzies-solo-project/static/js/787.15411d67.chunk.js",
+    "static/media/Dice6.png": "/tenzies-solo-project/static/media/Dice6.0d400044e168d44b5469.png",
+    "static/media/Dice5.png": "/tenzies-solo-project/static/media/Dice5.5112e74a6afdd26f345c.png",
+    "static/media/heldDice6.png": "/tenzies-solo-project/static/media/heldDice6.81ff6bac41e8322f4326.png",
+    "static/media/Dice4.png": "/tenzies-solo-project/static/media/Dice4.e8ff4131c9401edf0090.png",
+    "static/media/heldDice5.png": "/tenzies-solo-project/static/media/heldDice5.e9d73828d547e45ea583.png",
     "index.html": "/tenzies-solo-project/index.html",
-    "main.44a934ab.css.map": "/tenzies-solo-project/static/css/main.44a934ab.css.map",
-    "main.89c4a23c.js.map": "/tenzies-solo-project/static/js/main.89c4a23c.js.map",
+    "main.6c5bdfc2.css.map": "/tenzies-solo-project/static/css/main.6c5bdfc2.css.map",
+    "main.f185bf83.js.map": "/tenzies-solo-project/static/js/main.f185bf83.js.map",
     "787.15411d67.chunk.js.map": "/tenzies-solo-project/static/js/787.15411d67.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44a934ab.css",
-    "static/js/main.89c4a23c.js"
+    "static/css/main.6c5bdfc2.css",
+    "static/js/main.f185bf83.js"
   ]
 }
