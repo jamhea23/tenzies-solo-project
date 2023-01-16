@@ -16,7 +16,7 @@ import Confetti from "react-confetti";
 
 function App() {
   const [dice, setDice] = React.useState(allNewDice());
-  // console.log(dice);
+  console.log(dice);
 
   const [tenzies, setTenzies] = React.useState(false);
 
@@ -54,13 +54,13 @@ function App() {
     return newDice;
   }
 
-  function generateNewDie() {
-    return {
-      value: Math.ceil(Math.random() * 6),
-      isHeld: false,
-      id: nanoid(),
-    };
-  }
+  // function generateNewDie() {
+  //   return {
+  //     value: Math.ceil(Math.random() * 6),
+  //     isHeld: false,
+  //     id: nanoid(),
+  //   };
+  // }
 
   function rollDice() {
     if (!tenzies) {
@@ -87,6 +87,7 @@ function App() {
       key={die.id}
       value={die.value}
       isHeld={die.isHeld}
+      image={die.image}
       handleClick={() => holdDice(die.id, die.isHeld)}
     />
   ));
