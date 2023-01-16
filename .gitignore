@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 dice-assets.psd
+# Local Netlify folder
+.netlify

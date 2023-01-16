@@ -1,5 +1,6 @@
 import React from "react";
 import Die from "./components/Die";
+import RollCounter from "./components/RollCounter";
 import { nanoid } from "nanoid";
 // import { useWindowSize } from "react-use";
 import Confetti from "react-confetti";
@@ -19,6 +20,8 @@ function App() {
   console.log(dice);
 
   const [tenzies, setTenzies] = React.useState(false);
+
+  const [diceCount, setDiceCount] = React.useState(0);
 
   React.useEffect(() => {
     // Check if all dice are held
@@ -54,14 +57,6 @@ function App() {
     return newDice;
   }
 
-  // function generateNewDie() {
-  //   return {
-  //     value: Math.ceil(Math.random() * 6),
-  //     isHeld: false,
-  //     id: nanoid(),
-  //   };
-  // }
-
   function rollDice() {
     if (!tenzies) {
       setDice((oldDice) =>
@@ -69,9 +64,11 @@ function App() {
           return die.isHeld ? die : generateNewDie();
         })
       );
+      incrementCounter();
     } else {
       setTenzies(false);
       setDice(allNewDice());
+      resetCounter();
     }
   }
 
@@ -82,6 +79,15 @@ function App() {
       })
     );
   }
+
+  function incrementCounter() {
+    setDiceCount((prevDiceCount) => prevDiceCount + 1);
+  }
+
+  function resetCounter() {
+    setDiceCount(0);
+  }
+
   const diceElements = dice.map((die) => (
     <Die
       key={die.id}
@@ -101,6 +107,7 @@ function App() {
         current value between rolls.
       </p>
       <div className="dice-container">{diceElements}</div>
+      <RollCounter diceCount={diceCount} />
       <button className="roll-dice" onClick={rollDice}>
         {tenzies ? "New Game" : "Roll"}
       </button>
